@@ -25,6 +25,18 @@
       }
     }
   </script>
+
+  <!-- animaton acdoe  -->
+    <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+
+    .animate-float {
+      animation: float 2s ease-in-out infinite;
+    }
+  </style>
 </head>
 <body class="w-full h-full m-0 p-0 bg-gray-50 min-h-screen overflow-x-hidden">
   <%- include('header') %>
@@ -36,7 +48,7 @@
 <!-- Hero Section -->
 <div class="relative h-screen w-full">
   <!-- Background Image -->
-  <img src="/images/office.png" alt="Office Background" class="absolute inset-0 w-full h-full object-cover"/>
+  <img src="/images/index/11062b_0f10d1a3bc8e4fb1ba089c42056efe9b~mv2.jpg" alt="Office Background" class="absolute inset-0 w-full h-full object-cover"/>
 
   <!-- Overlay -->
   <div class="absolute inset-0 bg-blue-100 bg-opacity-60"></div>
@@ -67,7 +79,7 @@
         
         <!-- Service Item -->
         <div class="flex items-start space-x-6">
-          <img src="/icons/finance.svg" alt="Corporate Finance Icon" class="w-10 h-10"/>
+          <img src="/images/index/0f7068_395630413cff44edadb3fd9eacde7779~mv2.png" alt="Corporate Finance Icon" class="w-10 h-10"/>
           <div>
             <h3 class="text-lg font-medium text-gray-700">Corporate and Project Finance</h3>
             <p class="text-sm text-gray-600">Preparation of feasibility report, arrangement of finances and more.</p>
@@ -75,7 +87,7 @@
         </div>
   
         <div class="flex items-start space-x-6">
-          <img src="/icons/audit.svg" alt="Audit Icon" class="w-10 h-10"/>
+          <img src="/images/index/0f7068_348398c5c5154d008b2d1ccb2ba14463~mv2.png" alt="Audit Icon" class="w-10 h-10"/>
           <div>
             <h3 class="text-lg font-medium text-gray-700">Audit and Assurance</h3>
             <p class="text-sm text-gray-600">Statutory and internal audit of listed, private companies across all industries.</p>
@@ -83,7 +95,7 @@
         </div>
   
         <div class="flex items-start space-x-6">
-          <img src="/icons/taxation.svg" alt="Taxation Icon" class="w-10 h-10"/>
+          <img src="/images/index/0f7068_103b601ca3ad4527a66c7d08191a3326~mv2.png" alt="Taxation Icon" class="w-10 h-10"/>
           <div>
             <h3 class="text-lg font-medium text-gray-700">Taxation</h3>
             <p class="text-sm text-gray-600">Regular income tax matters, Assessments, and appeals and GST matters.</p>
@@ -91,7 +103,7 @@
         </div>
   
         <div class="flex items-start space-x-6">
-          <img src="/icons/law.svg" alt="Law Icon" class="w-10 h-10"/>
+          <img src="/images/index/0f7068_79dc98c0707b4d93b64baf99886d442b~mv2.png" alt="Law Icon" class="w-10 h-10"/>
           <div>
             <h3 class="text-lg font-medium text-gray-700">Company Law compliances</h3>
             <p class="text-sm text-gray-600">Incorporation of companies, assistance with compliance with the provisions of Companies Act, 2013.</p>
@@ -129,7 +141,52 @@
   
       <!-- Right Image -->
       <div class="md:w-1/2 flex justify-center">
-        <img src="/images/team-illustration.png" alt="Team Illustration" class="w-full max-w-md">
+        <style>
+          @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+          }
+      
+          .animate-float {
+            animation: float 2s ease-in-out infinite;
+          }
+      
+          @keyframes walk {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(5px); }
+          }
+      
+          .animate-walk {
+            animation: walk 2s ease-in-out infinite;
+          }
+        </style>
+      </head>
+      <body class="bg-slate-100 flex items-center justify-center min-h-screen">
+        <div class="relative w-[300px] h-[250px] bg-gray-700 rounded-lg shadow-lg">
+          
+          <!-- Desk -->
+          <div class="absolute top-[130px] left-[40px] w-[120px] h-[60px] bg-gray-300 border border-gray-400 animate-float"></div>
+      
+          <!-- Computer -->
+          <div class="absolute top-[110px] left-[90px] w-[40px] h-[30px] bg-gray-800 rounded-sm"></div>
+      
+          <!-- Lamp -->
+          <div class="absolute top-[70px] left-[115px] w-[6px] h-[40px] bg-black"></div>
+      
+          <!-- Chair -->
+          <div class="absolute top-[150px] left-[180px] w-[40px] h-[40px] bg-gray-600 rounded-md"></div>
+      
+          <!-- Person at Desk -->
+          <div class="absolute top-[125px] left-[70px] w-[30px] h-[60px] bg-blue-500 rounded-sm shadow-md"></div>
+      
+          <!-- Standing Person -->
+          <div class="absolute top-[130px] left-[220px] w-[30px] h-[60px] bg-red-500 rounded-sm shadow-md animate-walk"></div>
+      
+          <!-- Papers on Floor -->
+          <div class="absolute top-[190px] left-[60px] w-[20px] h-[10px] bg-white rotate-12 shadow-sm"></div>
+          <div class="absolute top-[195px] left-[90px] w-[20px] h-[10px] bg-white -rotate-6 shadow-sm"></div>
+      
+        </div>
       </div>
   
     </div>
@@ -144,27 +201,27 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
         <!-- Industry Card -->
         <div>
-          <img src="/images/infrastructure.jpg" alt="Infrastructure" class="w-48 h-32 object-cover mb-2">
+          <img src="/images/index/fe30c83c218a4eeaba00648bcafbaa98.jpg" alt="Infrastructure" class="w-48 h-32 object-cover mb-2">
           <p class="text-sm text-gray-700">Infrastructure</p>
         </div>
   
         <div>
-          <img src="/images/pharma.jpg" alt="Pharmaceuticals" class="w-48 h-32 object-cover mb-2">
+          <img src="/images/index/f8fe7ef82da74db4b5726e60f902c36e.jpg" alt="Pharmaceuticals" class="w-48 h-32 object-cover mb-2">
           <p class="text-sm text-gray-700">Pharmaceuticals</p>
         </div>
   
         <div>
-          <img src="/images/engineering.jpg" alt="Engineering" class="w-48 h-32 object-cover mb-2">
+          <img src="/images/index/6ea33cd5b203488dbbc347e290648b2c.jpg" alt="Engineering" class="w-48 h-32 object-cover mb-2">
           <p class="text-sm text-gray-700">Engineering</p>
         </div>
   
         <div>
-          <img src="/images/education.jpg" alt="Education" class="w-48 h-32 object-cover mb-2">
+          <img src="/images/index/fc25c47c381345869cf563b717a21b09.jpg" alt="Education" class="w-48 h-32 object-cover mb-2">
           <p class="text-sm text-gray-700">Education</p>
         </div>
   
         <div>
-          <img src="/images/healthcare.jpg" alt="Healthcare" class="w-48 h-32 object-cover mb-2">
+          <img src="/images/index/cc33194e92ac493c81a5d60306500ac3.jpg" alt="Healthcare" class="w-48 h-32 object-cover mb-2">
           <p class="text-sm text-gray-700">Healthcare</p>
         </div>
       </div>
