@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bansal & Agrawal Chartered Accountants</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#205b84',
+                        },
+                        secondary: {
+                            500: '#22c55e',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+   
+<body>
+
+  <div id="header"></div>
+  <%- include('header') %>
+  <section class="relative h-[50vh] w-full">
+    <!-- Background Image -->
+    <img src="/images/contact-banner.jpg" alt="Contact Us Background" class="absolute inset-0 w-full h-full object-cover" />
+  
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+  
+    <!-- Centered Heading -->
+    <div class="relative z-10 flex items-center justify-center h-full">
+      <h2 class="text-3xl font-semibold text-white">Contact us</h2>
+    </div>
+  </section>
+  
+
+
+  <!-- contact us  -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+      
+      <!-- Left: Form -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-6">Sanjay Mehta and Associates</h2>
+        <form class="space-y-4">
+          <input type="text" placeholder="Name *" class="w-full border border-gray-300 px-4 py-2 text-sm outline-none" />
+          <input type="email" placeholder="Email *" class="w-full border border-gray-300 px-4 py-2 text-sm outline-none" />
+          <input type="text" placeholder="Subject" class="w-full border border-gray-300 px-4 py-2 text-sm outline-none" />
+          <textarea rows="5" placeholder="Message" class="w-full border border-gray-300 px-4 py-2 text-sm outline-none"></textarea>
+          <button type="submit" class="bg-indigo-300 text-white px-4 py-2 text-sm">Send</button>
+        </form>
+      </div>
+  
+      <!-- Right: Contact Info + Map -->
+      <div class="space-y-6">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div>
+            <h3 class="font-semibold mb-1">Our Address</h3>
+            <p class="text-sm text-gray-700">338 Saket Nagar<br/>Indore, Madhya Pradesh (452001)<br/>office@smaonline.in</p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1">Call Us</h3>
+            <p class="text-sm text-gray-700">
+              Tel: 0731-4274391, 2563625,<br/>9425062964
+            </p>
+          </div>
+        </div>
+  
+        <!-- Map Embed -->
+        <div class="w-full h-64">
+          <iframe 
+          src="https://www.google.com/maps?q=22.702938845803587,75.91365512126467&z=15&output=embed"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   
+  <div id="footer"></div>
+  <%- include('footer') %>
+
+  <script src="js/include.js"></script>
+</body>
+</html>
+
+
+
+<!-- contact us ppge  -->

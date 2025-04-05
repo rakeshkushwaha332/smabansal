@@ -1,0 +1,103 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Industries Served</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: {
+                        500: '#205b84',
+                    },
+                    secondary: {
+                        500: '#22c55e',
+                    },
+                }
+            }
+        }
+    }
+</script>
+</head>
+<body class="bg-gray-50 min-h-screen"></body>
+    <div>
+        <%- include('header') %>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="max-w-5xl mx-auto px-4 py-10">
+    
+  <!-- Breadcrumb -->
+  <div class="text-sm text-gray-500 mb-4">
+    <a href="/" class="hover:underline">Home</a> &gt;
+    <a href="#" class="hover:underline">Service</a> &gt;
+    <a href="#" class="hover:underline">What We Do</a> &gt;
+    <a href="#" class="hover:underline">Work</a> &gt;
+    <span class="text-blue-600">Subsidy, Concessions and Incentives from State as well as Central Government</span>
+  </div>
+
+  <!-- Title -->
+  <h1 class="text-3xl font-bold text-blue-900 mb-6 leading-tight">
+    Subsidy, Concessions and Incentives from State as well as Central Government
+  </h1>
+
+  <!-- Image -->
+  <div class="mb-6">
+    <img src="/images/index/subsidy.jpg" alt="Law & Subsidy Image" class="rounded shadow-md">
+    <!-- Replace the src with the actual path in your project -->
+  </div>
+
+  <!-- Description -->
+  <p class="mb-6 leading-relaxed text-gray-700">
+    We have emerged as the prominent service provider CA Firm for getting the best deals in subsidies and Finance
+    for agro and food projects, horticulture projects and other manufacturing industrial projects in India. We are
+    successfully rendering services to entrepreneurs regarding subsidy schemes, various Govt. grants and project
+    financing since last two decades. Subsidies are available from Central as well as State government to new as
+    well as existing establishments.
+  </p>
+
+  <!-- Eligible Sectors List -->
+  <p class="font-semibold mb-2">An indicative list of eligible sectors for availing Govt. Subsidies:</p>
+  <ul class="list-disc list-inside space-y-1 text-gray-800">
+    <li>✔️ Agriculture, Horticulture and Allied Industries.</li>
+    <li>✔️ Food Processing Industry</li>
+    <li>✔️ Cold Storage and Cold Chain Industries.</li>
+    <li>✔️ Hospital and Healthcare Sector</li>
+    <li>✔️ Hotels, Resorts and Tourism Industry</li>
+    <li>✔️ Warehouse, Silo and other Storage infrastructure</li>
+    <li>✔️ Textile Industry</li>
+    <li>✔️ Subsidy to other manufacturing units</li>
+    <li>✔️ Subsidy to all Service Sector units</li>
+    <li>✔️ Subsidy to Start Ups</li>
+  </ul>
+
+  <!-- Sign in with Google -->
+  <div class="mt-8">
+    <a href="/auth/google" class="inline-block bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 text-sm font-semibold">
+      SIGN IN WITH GOOGLE
+    </a>
+  </div>
+</div>
+<%- include('footer') %>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services We Offer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#205b84',
+                        },
+                        secondary: {
+                            500: '#22c55e',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <%- include('header') %>
+     <!-- OUR SERVICES-->
+     <section class="relative h-[60vh] w-full">
+      <!-- Background Image -->
+      <img src="/images/services-banner.jpg" alt="People Networking" class="absolute inset-0 w-full h-full object-cover" />
+    
+      <!-- Overlay (optional for contrast) -->
+      <div class="absolute inset-0 bg-white bg-opacity-30"></div>
+    
+      <!-- Text Content -->
+      <div class="relative z-10 flex items-center justify-center h-full">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800">
+          Services we offer
+        </h2>
+      </div>
+    </section>
+    
+
+    <section class="w-full py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-gray-800 text-sm">
+        
+        <!-- Column 1 -->
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Corporate and Project Finance</h3>
+          <p class="mb-2">We have an established track record in providing services in the field of infrastructure financing in Projects in sectors as Road, Hydro power, Solar Power, Surface transport – Bus stands, truck terminus, Drinking Water pipe line and distribution facilities, being executed on PPP basis since 1995. We have given services as financial consultants and Income tax consultants for Projects undertaken for execution on BOT/Annuity/BOT-Annuity/HAM/OMT basis. Our range of services includes:</p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Pre-bid analysis, post-bid-allotment services in the form of SPV structuring</li>
+            <li>Financial syndication of loans (long term and short term)</li>
+            <li>Legal advisory on joint venture documentation</li>
+            <li>Arranging and advising on private equity for such projects</li>
+          </ul>
+        </div>
+    
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Audit and Assurance</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Statutory Audits of Listed/Closely held Public/Private companies</li>
+            <li>Internal Audits</li>
+            <li>Tax Audits of entities as per Income Tax Act, 1961</li>
+            <li>Due Diligence</li>
+            <li>Certification services</li>
+          </ul>
+    
+          <h3 class="text-lg font-semibold mt-6 mb-2">Direct Taxation</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Tax and statutory compliance review</li>
+            <li>Domestic Transfer pricing</li>
+            <li>Representations and litigation support – Assessments & appeals</li>
+            <li>Tax Due Diligence</li>
+            <li>Valuation services for investment compliance</li>
+          </ul>
+        </div>
+    
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Indirect Taxation</h3>
+          <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>Registrations, compliance and ancillary services under GST regime</li>
+            <li>Representation before tax authorities</li>
+            <li>E-filings of various returns</li>
+          </ul>
+    
+          <h3 class="text-lg font-semibold mb-2">Transaction Advisory</h3>
+          <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>Due Diligence</li>
+            <li>Mergers and Acquisitions</li>
+            <li>Exchange Control Formalities</li>
+            <li>Advisory on corporate law, FEMA, and other allied laws</li>
+            <li>Valuation of Business and shares</li>
+          </ul>
+    
+          <h3 class="text-lg font-semibold mb-2">Company Law Matters</h3>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Incorporation of Companies</li>
+            <li>Filing of documents with registrar</li>
+            <li>Compliance for meetings, reporting, etc.</li>
+            <li>Consultations on other applicable provisions</li>
+          </ul>
+        </div>
+    
+      </div>
+    </section>
+    
+
+
+    <!-- contact us  -->
+
+    <section class="w-full py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+        
+        <!-- Left: Text Content -->
+        <div class="text-center md:text-left mb-6 md:mb-0">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-1">
+            Need more details? Contact us
+          </h2>
+          <p class="text-sm text-gray-600">
+            We are here to assist. Contact us by phone or email.
+          </p>
+        </div>
+    
+        <!-- Right: Button -->
+        <div>
+          <a href="/contact" class="inline-block bg-red-400 hover:bg-red-500 text-white text-sm font-medium px-6 py-3 rounded-sm transition">
+            Contact Us
+          </a>
+        </div>
+    
+      </div>
+    </section>
+    
+    
+  <%- include('footer') %>
+</body>
+</html>

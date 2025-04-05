@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Industries Served</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: {
+                        500: '#205b84',
+                    },
+                    secondary: {
+                        500: '#22c55e',
+                    },
+                }
+            }
+        }
+    }
+</script>
+</head>
+<body class="bg-gray-50 min-h-screen"></body>
+    <div>
+        <%- include('header') %>
+    </div>
+
+<h1>
+
+NO Data found
+
+
+</h1>
+
+
+
+  <!-- Sign in with Google -->
+  <div class="mt-8">
+    <a href="/auth/google" class="inline-block bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 text-sm font-semibold">
+      SIGN IN WITH GOOGLE
+    </a>
+  </div>
+</div>
+<%- include('footer') %>
+
+</body>
+</html>

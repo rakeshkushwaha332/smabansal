@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              500: '#205b84',
+            },
+            secondary: {
+              500: '#22c55e',
+            },
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <%- include('header') %> 
+
+  <!-- Full-width wrapper -->
+  <div class="w-full">
+
+    <section class="max-w-7xl mx-auto px-4 py-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        
+        <!-- Left: Text Description -->
+        <div>
+          <h2 class="text-3xl font-bold mb-6">Work with us</h2>
+          <p class="text-gray-700 mb-4">
+            If you are looking for a career that challenges you and inspires you, consider Sanjay Mehta and Associates.
+          </p>
+          <p class="text-gray-700 mb-4">
+            We provide our young professionals with an opportunity to work on assignments/projects across several functional areas and industry sectors before they can specialize in any one function or industry.
+          </p>
+          <p class="text-gray-700 mb-4">
+            Due to our ambitious growth plan, we are constantly in need of people. Our need for talented and ambitious professionals never ends.
+            We offer a variety of services, so we are looking for a variety of people - people from varied educational and business backgrounds and individuals who can bring new perspectives and dimensions to emerging trends and scenarios.
+          </p>
+          <p class="text-gray-700">
+            We seek bright individuals, i.e. creative thinkers with integrity and commitment, who are good team players with the courage to lead and who possess a never-ending passion for challenges.
+          </p>
+        </div>
+
+        <!-- Right: Form -->
+        <form action="/apply" method="POST" enctype="multipart/form-data" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="text" name="firstName" placeholder="First Name" class="w-full border border-gray-300 px-4 py-2 rounded" required>
+            <input type="text" name="lastName" placeholder="Last Name" class="w-full border border-gray-300 px-4 py-2 rounded" required>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="email" name="email" placeholder="Email" class="w-full border border-gray-300 px-4 py-2 rounded" required>
+            <input type="text" name="phone" placeholder="Phone" class="w-full border border-gray-300 px-4 py-2 rounded" required>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <select name="position" class="w-full border border-gray-300 px-4 py-2 rounded" required>
+              <option value="">Position you apply for</option>
+              <option value="intern">Intern</option>
+              <option value="analyst">Analyst</option>
+              <option value="consultant">Consultant</option>
+            </select>
+            <div class="relative">
+              <input type="file" name="resume" class="w-full border border-gray-300 px-4 py-2 rounded cursor-pointer" required>
+              <p class="text-xs text-gray-400 mt-1">Max File Size 15MB</p>
+            </div>
+          </div>
+
+          <button type="submit" class="bg-[#2E43C3] text-white px-6 py-2 rounded hover:bg-[#1d2a94]">
+            Submit
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+  </div>
+
+  <%- include('footer') %>
+</body>
+</html>

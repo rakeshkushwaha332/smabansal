@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bansal & Agrawal Chartered Accountants</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#205b84',
+                        },
+                        secondary: {
+                            500: '#22c55e',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <%- include('header') %>
+<div >
+<section class="relative bg-cover bg-center bg-no-repeat min-h-[400px]" style="background-image: url('/images/index/heroimg2.jpg');" >
+    <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-24">
+      <h1 class="text-3xl font-bold text-[#1C1C1C]">About us</h1>
+    </div>
+  </section>
+  
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-6">Bansal & <br>Agrawal Chartered Accountants</h2>
+  
+    <p class="text-gray-700 mb-6 leading-relaxed">
+      Bansal & Agrawal Chartered Accountants is a firm offering a variety of value-added services in the field of Chartered Accountancy and Corporate Advisory Services, providing customized solutions for the clients. The firm among others has a track record and specialisation in Infrastructure advisory for projects undertaken on PPP mode by central/state government and in the process has given services to clients situated across geographies in Mumbai, Gujarat, Rajasthan, Maharashtra and Karnataka and Madhya Pradesh.
+    </p>
+  
+    <p class="text-gray-700 leading-relaxed">
+      We remain true to the same principles on which our firm was founded over twenty years ago. Built on a foundation of integrity, professionalism, and client commitment, we have consistently delivered trusted financial and advisory services. Our mission is to uphold the highest standards of excellence while adapting to the ever-evolving regulatory landscape. Through dedication and expertise, we continue to be a reliable partner for individuals, businesses, and institutions seeking comprehensive chartered accountancy solutions.
+    </p>
+  </section>
+
+
+  <!-- leaders -->
+  <section class="bg-[#e5e7f2] py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Our Leaders Heading -->
+      <h2 class="text-3xl font-bold text-[#1c1c1c] mb-12">Our Leaders</h2>
+  
+      <!-- Leaders Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+        
+        <!-- Leader 1 -->
+        <div class="flex gap-4">
+          <img src="/images/index/ANURAG BANSAL.png" alt="ANURAG BANSAL" class="w-24 h-28 object-cover rounded shadow" />
+          <div>
+            <h3 class="text-xl font-semibold text-[#1c1c1c]">ANURAG BANSAL</h3>
+            <p class="text-sm text-gray-600">Partner</p>
+            <p class="text-sm text-blue-500 mb-2">sanjaymehta@smaonline.in</p>
+            <p class="text-sm text-gray-800 leading-relaxed mb-2">
+              Sanjay Mehta is a founder of the firm Sanjay Mehta and Associates and member of the Institute of Chartered Accountants of India (ICAI) since 1989.
+              He heads the firm’s corporate finance, transaction advisory and investment banking advisory services.
+            </p>
+            <p class="text-sm text-gray-800 leading-relaxed mb-2">
+              He has handled projects raising long/short term debt (~₹7700 crores) and ₹75 crores of Private equity.
+            </p>
+            <p class="text-sm text-gray-800 leading-relaxed">
+              With 20+ years in tax advisory and assurance, he has served as an independent director in corporates.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Leader 2 -->
+        <div class="flex gap-4">
+          <img src="/images/index/Photo of Rishab.png" alt="RISHAB SHRIWAS" class="w-24 h-28 object-cover rounded shadow" />
+          <div>
+            <h3 class="text-xl font-semibold text-[#1c1c1c]">RISHAB SHRIWAS</h3>
+            <p class="text-sm text-gray-600">Partner</p>
+            <p class="text-sm text-blue-500 mb-2">manishmittal@smaonline.in</p>
+            <p class="text-sm text-gray-800 leading-relaxed mb-2">
+              Member of ICAI since 1999. Heads the firm’s assurance practice.
+            </p>
+            <p class="text-sm text-gray-800 leading-relaxed">
+              Believes in detailed client discussions and innovative solutions for complex business problems.
+            </p>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!-- Our Team -->
+      <section class="w-full py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+          
+          <!-- Left: Text Content -->
+          <div class="text-center md:text-left mb-6 md:mb-0">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-1">
+              Need more details? Contact us
+            </h2>
+            <p class="text-sm text-gray-600">
+              We are here to assist. Contact us by phone or email.
+            </p>
+          </div>
+      
+          <!-- Right: Button -->
+          <div>
+            <a href="/contact" class="inline-block bg-red-400 hover:bg-red-500 text-white text-sm font-medium px-6 py-3 rounded-sm transition">
+              Contact Us
+            </a>
+          </div>
+      
+        </div>
+      </section>
+    <!-- Footer -->
+    <%- include('footer') %>
+
+</body>
+</html>

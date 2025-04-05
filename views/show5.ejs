@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Industries Served</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: {
+                        500: '#205b84',
+                    },
+                    secondary: {
+                        500: '#22c55e',
+                    },
+                }
+            }
+        }
+    }
+</script>
+</head>
+<body class="bg-gray-50 min-h-screen"></body>
+    <div>
+        <%- include('header') %>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="max-w-5xl mx-auto px-4 py-10">
+    
+  <!-- Breadcrumb -->
+  <div class="text-sm text-gray-500 mb-4">
+    <a href="/" class="hover:underline">Home</a> &gt;
+    <a href="#" class="hover:underline">Service</a> &gt;
+    <a href="#" class="hover:underline">What We Do</a> &gt;
+    <a href="#" class="hover:underline">Work</a> &gt;
+    <span class="text-blue-600">Business Start Up Services</span>
+  </div>
+
+  <!-- Title -->
+  <h1 class="text-3xl font-bold text-blue-900 mb-6 leading-tight">
+    Business Start Up Services
+  </h1>
+
+  <!-- Image -->
+  <div class="mb-6">
+    <img src="/images/index/start.jpg" alt="Law & Subsidy Image" class="rounded shadow-md">
+    <!-- Replace the src with the actual path in your project -->
+  </div>
+
+  Description
+  <p class="mb-6 leading-relaxed text-gray-700">
+    Business can be setup in India in three types like Formation of liaison office,
+     Formation of Project office and Formation of Branch office We provide complete 
+     start up services to the first time entrepreneur and technocrats.
+  </p>
+
+  <!-- Eligible Sectors List -->
+  <p class="font-semibold mb-2"> Our bouquet of services include:  </p>
+  <ul class="list-disc list-inside space-y-1 text-gray-800">
+    <li>✔️ Suggesting most suitable business format- Company, LLP, Partnership, Proprietorship etc.</li>
+    <li>✔️ Legal formalities for business set up</li>
+    <li>✔️ Initial hand holding in accounting, finance and taxation matters</li>
+ 
+  </ul>
+
+
+
+
+
+
+
+
+  <!-- Sign in with Google -->
+  <div class="mt-8">
+    <a href="/auth/google" class="inline-block bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 text-sm font-semibold">
+      SIGN IN WITH GOOGLE
+    </a>
+  </div>
+</div>
+<%- include('footer') %>
+
+</body>
+</html>
